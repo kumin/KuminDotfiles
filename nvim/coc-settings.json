@@ -2,7 +2,7 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
-  "coc.preferences.formatOnSaveFiletypes": ["rust", "json", "go"],
+  "coc.preferences.formatOnSaveFiletypes": ["rust", "json", "go", "java"],
   "rust-analyzer.checkOnSave.extraArgs": ["--all-features"],
   "go.goplsOptions": {
     "completeUnimported": true,
