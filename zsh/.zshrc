@@ -111,14 +111,14 @@ source $ZSH/oh-my-zsh.sh
 export  PATH=$PATH:$HOME/go/bin
 source <(kubectl completion zsh)
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '${HOME}/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '${HOME}/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '${HOME}/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '${HOME}/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
 export PATH=$PATH:"${HOME}/Downloads/google-cloud-sdk/bin"
 export GOPRIVATE=github.com/tikivn
 export GOOGLE_APPLICATION_CREDENTIALS="${HOME}/bq_credential.txt"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home
 export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/lap01516/Desktop/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/lap01516/Desktop/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/lap01516/Desktop/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/lap01516/Desktop/google-cloud-sdk/completion.zsh.inc'; fi
