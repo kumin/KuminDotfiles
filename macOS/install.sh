@@ -1,1 +1,1 @@
-brew bundle --file=~/Brewfile
+brew bundle --file=$1

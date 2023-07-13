@@ -38,4 +38,4 @@ lvim.builtin.treesitter.auto_install = true
 -- Window
 lvim.transparent_window = true
 -- Diagnostics
-lvim.lsp.diagnostics.virtual_text = true
+vim.diagnostic.config({ virtual_text = true })
