@@ -25,7 +25,7 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- -- Change theme settings
--- lvim.colorscheme = "lunar"
+lvim.colorscheme = "elflord"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"

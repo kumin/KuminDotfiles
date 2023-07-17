@@ -130,7 +130,25 @@ export GOBIN=$GOPATH/bin
 export PATH=$GOBIN:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+export TERM=alacritty
 
-
+# ===================================================================
+# Theme p10k
+# ===================================================================
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# ===================================================================
+# Google Cloud
+# ===================================================================
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/hminh/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/hminh/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/hminh/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/hminh/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+# ===================================================================
+# Kubectl
+# ===================================================================
+source <(kubectl completion zsh)
+

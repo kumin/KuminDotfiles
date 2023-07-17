@@ -1,7 +1,7 @@
-import = [ "~/.config/alacritty/themes/cyberpunk-neon.toml" ]
+import = [ "~/.config/alacritty/themes/themes/cyber_punk_neon.yaml" ]
 
 [font]
-size = 13.5
+size = 16
 
   [font.offset]
   y = 10
@@ -13,7 +13,7 @@ size = 13.5
   family = "Hack Nerd Font"
 
 [window]
-opacity = 0.90
+opacity = 0.85
 startup_mode = "Fullscreen"
 decorations = "buttonless"
 
@@ -31,8 +31,8 @@ unfocused_hollow = true
   [cursor.style]
   blinking = "Never"
 
-[env]
-TERM = "xterm-256color"
+#[env]
+#TERM = "xterm-256color"
 
 [scrolling]
 history = 2_000
