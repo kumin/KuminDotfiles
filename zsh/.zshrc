@@ -116,6 +116,8 @@ alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
+alias lxp-env='.  ~/Documents/code/LeapXpert/lxp_env.sh'
+alias lxp-pf='sh ~/Documents/code/LeapXpert/lxp_port_forward.sh'
 eval "$(zoxide init zsh)"
 
 # ===================================================================
@@ -132,23 +134,22 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 export TERM=alacritty
-
-# ===================================================================
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+export LXP_REPOSITORY_USERNAME=backend-ro
+export LXP_REPOSITORY_PASSWORD=LeapXpert@Secret
+#===================================================================
 # Theme p10k
 # ===================================================================
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# ===================================================================
-# Google Cloud
-# ===================================================================
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/hminh/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/hminh/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/hminh/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/hminh/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-# ===================================================================
+# ==================================================================
 # Kubectl
 # ===================================================================
-source <(kubectl completion zsh)
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Applications/google-cloud-sdk/path.zsh.inc' ]; then . '/Applications/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Applications/google-cloud-sdk/completion.zsh.inc' ]; then . '/Applications/google-cloud-sdk/completion.zsh.inc'; fi

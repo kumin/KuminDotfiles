@@ -5,6 +5,5 @@ local formatters = require("lvim.lsp.null-ls.formatters")
 formatters.setup({
 	{ command = "stylua", filetypes = { "lua" } },
 	{ command = "goimports", filetypes = { "go" } },
-	{ command = "gofumpt", filetypes = { "go" } },
 	{ command = "shfmt", filetypes = { "sh", "zsh" } },
 })

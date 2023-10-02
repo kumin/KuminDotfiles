@@ -1,7 +1,7 @@
 import = [ "~/.config/alacritty/themes/themes/cyber_punk_neon.yaml" ]
 
 [font]
-size = 16
+size = 15
 
   [font.offset]
   y = 10
