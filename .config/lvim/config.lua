@@ -13,9 +13,9 @@ vim.opt.relativenumber = true
 lvim.log.level = "info"
 -- formatter
 lvim.format_on_save = {
-	enabled = true,
-	pattern = "*",
-	timeout = 1000,
+  enabled = true,
+  pattern = "*",
+  timeout = 1000,
 }
 -- keymappings <https://www.lunarvim.org/docs/configuration/keybindings>
 lvim.leader = "space"
@@ -39,6 +39,5 @@ lvim.builtin.treesitter.auto_install = true
 lvim.transparent_window = true
 -- Diagnostics
 vim.diagnostic.config({ virtual_text = true })
-
 -- vim.g.delve_use_vimux = 1
 -- vim.g.delve_new_command = "new"

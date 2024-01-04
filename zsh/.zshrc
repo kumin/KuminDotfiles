@@ -48,7 +48,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -133,10 +133,8 @@ export PATH=$GOBIN:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-export TERM=alacritty
+# export TERM=alacritty
 export JAVA_HOME=$(/usr/libexec/java_home -v 17)
-export LXP_REPOSITORY_USERNAME=backend-ro
-export LXP_REPOSITORY_PASSWORD=LeapXpert@Secret
 #===================================================================
 # Theme p10k
 # ===================================================================
